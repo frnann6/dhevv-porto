@@ -35,8 +35,51 @@ body{
     padding-top: 50px;
 }
 
+.hero .bg-icon-ig{
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    transition: 0.3s ease;
+}
 
+.hero .icon-wa{
+    color:  #25D366;
+    transition: 0.3s ease;
+}
 
+.hero .icon-email{
+    transition: 0.3s ease;
+}
+
+.hero .bg-icon-ig:hover,
+.hero .icon-wa:hover,
+.hero .icon-email:hover
+{
+    transform: scale(1.2);
+}
+
+/* About */
+.about{
+    margin-top: 300px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 80px;
+}
+
+.footer p,
+.footer small {
+    margin: 0;
+}
+
+footer {
+    margin-top: auto;
+}
 
 
 /* RESPONSIVE */
@@ -46,6 +89,7 @@ body{
         padding-left: 16px;
     }
 
+    /* hero */
     .hero .tes{
         text-align: center;
     }
@@ -57,5 +101,13 @@ body{
     .hero img{
         margin-top: 50px;
         padding-top: 0;
+    }
+
+    .hero .icons{
+        justify-content: center;
+    }
+
+    .hero .icons h3{
+        font-size: 28px;
     }
 }
