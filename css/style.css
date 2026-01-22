@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+/* nav */
+.nv img{
+    height: 40px;
+    border-radius: 50px;
+}
+
+/* hero */
+
+.ramdhani{
+    color: #7E74F1;
+}
+
+.hero {
+    background-color: #fff;
+    margin-top: 100px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero img{
+    padding-top: 50px;
+}
+
+
+
+
+
+/* RESPONSIVE */
+@media (max-width:767px){
+    /* nav */
+    .navbar-brand{
+        padding-left: 16px;
+    }
+
+    .hero .tes{
+        text-align: center;
+    }
+
+    .hero h1{
+        font-size: 2rem;
+    }
+
+    .hero img{
+        margin-top: 50px;
+        padding-top: 0;
+    }
+}
