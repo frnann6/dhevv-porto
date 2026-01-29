@@ -5,14 +5,34 @@
     box-sizing: border-box;
 }
 
+html, body{
+    height: 100%;
+}
+
 body{
     font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 /* nav */
 .nv img{
     height: 40px;
     border-radius: 50px;
+}
+
+/* base state */
+.dropdown-menu {
+    display: block;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* ketika dropdown aktif */
+.dropdown-menu.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* hero */
@@ -82,22 +102,74 @@ body{
     width: auto;
 }
 
+.about .btn-porto{
+    background-color: #9E2036;
+    color: white;
+}
+
+.about .btn-porto:hover{
+    background-color: #d32a46;
+    color: white;
+}
+
+/* portfolio */
+.portfolio{
+    margin-top: 150px;
+}
+
+.playfair{
+    font-family: "Playfair Display", serif;
+}
+
+.portfolio h1{
+    font-size: 40px;
+}
+
+.portfolio-img {
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+
+.portfolio-img:hover {
+    transform: scale(1.02);
+}
+
+.list-humanity {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.list-humanity img{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    break-inside: avoid;
+}
+
+/* Modal */
+.bg-modal{
+    background: rgba(255, 255, 255, 0.403);
+        /* semi transparan */
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        /* Safari */
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+
 /* Footer */
 .footer {
     padding: 20px 0;
     background-color: #f8f9fa;
     border-top: 1px solid #e5e7eb;
+    margin-top: auto;
 }
 
 .footer p,
 .footer small {
     margin: 0;
 }
-
-footer {
-    margin-top: auto;
-}
-
 
 /* RESPONSIVE */
 @media (max-width: 991px){
@@ -107,6 +179,20 @@ footer {
 
     .navbar li{
         text-align: center;
+    }
+
+    .navbar .dropdown-menu {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-10px);
+        min-width: 200px;
+        text-align: left;
+        margin-top: 8px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .dropdown-menu.show {
+        transform: translateX(-50%) translateY(0);
     }
 
     /* about */
@@ -126,6 +212,12 @@ footer {
         width: auto;
         margin-top: 0;
     }
+
+    /* Portfolio */
+    .list-humanity {
+            column-count: 2;
+            column-gap: 20px;
+        }
 }
 
 @media (max-width: 767px){
@@ -176,4 +268,13 @@ footer {
         
     }
 
+    /* Portfolio */
+    .list-humanity {
+        column-count: 2;
+        column-gap: 20px;
+    }
+
+    .desc-photo{
+        width: 100% !important;
+    }
 }
