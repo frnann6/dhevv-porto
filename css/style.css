@@ -312,7 +312,7 @@ body{
 
     /* Portfolio */
     .portfolio-divider {
-        width: 100%;
+        width: 70%;
         margin: 40px auto;
         /* auto kiri-kanan = center */
     }
