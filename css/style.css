@@ -139,7 +139,14 @@ body{
     column-gap: 20px;
 }
 
-.list-humanity img{
+.list-sports-humanity{
+    column-count: 4;
+    column-gap: 10px;
+}
+
+.list-humanity img,
+.list-sports-humanity img
+{
     width: 100%;
     display: block;
     margin-bottom: 20px;
@@ -156,6 +163,13 @@ body{
         /* Safari */
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
+
+/* .modal img {
+    max-height: 75vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+} */
 
 
 /* Footer */
@@ -218,6 +232,11 @@ body{
             column-count: 2;
             column-gap: 20px;
         }
+
+    .list-sports-humanity {
+            column-count: 2;
+            column-gap: 10px;
+        }
 }
 
 @media (max-width: 767px){
@@ -273,6 +292,11 @@ body{
         column-count: 2;
         column-gap: 20px;
     }
+
+    .list-sports-humanity {
+        column-count: 2;
+        column-gap: 10px;
+        }
 
     .desc-photo{
         width: 100% !important;
