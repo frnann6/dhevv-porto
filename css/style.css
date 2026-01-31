@@ -23,7 +23,6 @@ body{
 
 /* base state */
 .dropdown-menu {
-    display: block;
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 0.25s ease, transform 0.25s ease;
@@ -33,6 +32,21 @@ body{
 .dropdown-menu.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    display: none;
+    top: 0;
+    left: 100%;
+    margin-left: .1rem;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
 }
 
 /* hero */
@@ -121,6 +135,15 @@ body{
     font-family: "Playfair Display", serif;
 }
 
+.portfolio-divider {
+    width: 50%;
+    max-width: 300px;
+    /* biar nggak kepanjangan */
+    height: 1.5px;
+    background-color: #0000003b;
+    margin: 0 0;
+}
+
 .portfolio h1{
     font-size: 40px;
 }
@@ -158,7 +181,7 @@ body{
 .bg-modal{
     background: rgba(255, 255, 255, 0.403);
         /* semi transparan */
-        backdrop-filter: blur(16px);
+        backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(16px);
         /* Safari */
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
@@ -288,6 +311,12 @@ body{
     }
 
     /* Portfolio */
+    .portfolio-divider {
+        width: 100%;
+        margin: 40px auto;
+        /* auto kiri-kanan = center */
+    }
+    
     .list-humanity {
         column-count: 2;
         column-gap: 20px;
@@ -300,5 +329,18 @@ body{
 
     .desc-photo{
         width: 100% !important;
+    }
+
+    .kategori{
+        font-size: 16px;
+    }
+
+    .space{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    hr{
+        width: 50%;
     }
 }
