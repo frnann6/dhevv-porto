@@ -167,8 +167,14 @@ body{
     column-gap: 10px;
 }
 
+.list-archi-humanity{
+    column-count: 3;
+    column-gap: 10px;
+}
+
 .list-humanity img,
-.list-sports-humanity img
+.list-sports-humanity img,
+.list-archi-humanity img
 {
     width: 100%;
     display: block;
@@ -177,9 +183,11 @@ body{
     break-inside: avoid;
 }
 
+
 /* Modal */
 .bg-modal{
     background: rgba(255, 255, 255, 0.403);
+    /* background: rgba(255, 255, 255, 0.3); */
         /* semi transparan */
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(16px);
@@ -194,6 +202,21 @@ body{
     border-radius: 12px;
 } */
 
+/* .modal-content img {
+    max-height: 80vh;
+    maksimal 80% tinggi layar
+    width: auto;
+    margin: auto;
+    display: block;
+} */
+
+#profileModal img{
+    border-radius: 50%;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+}
 
 /* Footer */
 .footer {
@@ -260,6 +283,16 @@ body{
             column-count: 2;
             column-gap: 10px;
         }
+
+        .list-archi-humanity {
+            column-count: 2;
+            column-gap: 10px;
+        }
+
+    /* modal */
+        #profileModal img {
+            max-width: 250px;
+        }
 }
 
 @media (max-width: 767px){
@@ -325,6 +358,11 @@ body{
     .list-sports-humanity {
         column-count: 2;
         column-gap: 10px;
+        }
+
+        .list-archi-humanity {
+            column-count: 2;
+            column-gap: 10px;
         }
 
     .desc-photo{
