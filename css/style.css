@@ -26,12 +26,15 @@ body{
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 0.25s ease, transform 0.25s ease;
+    display: block;
+    visibility: hidden;
 }
 
 /* ketika dropdown aktif */
 .dropdown-menu.show {
     opacity: 1;
     transform: translateY(0);
+    visibility: visible;
 }
 
 .dropdown-submenu {
@@ -39,14 +42,18 @@ body{
 }
 
 .dropdown-submenu>.dropdown-menu {
-    display: none;
     top: 0;
     left: 100%;
-    margin-left: .1rem;
+    margin-left: .2rem;
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
 }
 
 .dropdown-submenu:hover>.dropdown-menu {
-    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
 }
 
 /* hero */
@@ -232,6 +239,14 @@ body{
 }
 
 /* RESPONSIVE */
+@media (min-width: 992px) {
+    .dropdown-submenu:hover>.dropdown-menu {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
 @media (max-width: 991px){
     .navbar ul {
         margin-top: 20px;
