@@ -33,7 +33,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto fw-semibold gap-3">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#about">About</a>
@@ -54,6 +54,8 @@
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#humanity">Humanity Photography</a></li>
                                     <li><a class="dropdown-item" href="#sports">Sports Photography</a></li>
+                                    <li><a class="dropdown-item" href="#architectural">Architectural Photography</a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -81,9 +83,12 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="nav-link text-center" href="#sports">
+                                                <a class="nav-link" href="#sports">
                                                     Sports Photography
                                                 </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="#architectural">Architectural Photography</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -132,7 +137,7 @@
 
             <div class="portfolio-divider"></div>
 
-            <div class="mb-5 space">
+            <div id="photography" class="mb-5 space">
                 <h6 class="fw-semibold playfair text-start mt-5 mb-4">| Photography</h6>
                 <h3 class="playfair">Through My Lens
                 </h3>
@@ -224,13 +229,38 @@
                 </div>
             </div>
 
+            <div id="architectural" class="humanity portfolio-category my-5">
+                <h4 class="text-center playfair text-muted kategori">Food Photography</h4>
+            
+                <!-- image -->
+                <div class="list-archi-humanity mt-5">
+                    <div>
+                        <img src="assets/architectural_photography/architectural1.0.webp" alt="" class="portfolio-img"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-img="assets/architectural_photography/architectural1.0.webp">
+                        <img src="assets/architectural_photography/architectural1.1.webp" alt="" class="portfolio-img"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-img="assets/architectural_photography/architectural1.1.webp">
+                        <img src="assets/architectural_photography/architectural1.2.webp" alt="" class="portfolio-img"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-img="assets/architectural_photography/architectural1.2.webp">
+                        <img src="assets/architectural_photography/architectural1.3.webp" alt="" class="portfolio-img"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-img="assets/architectural_photography/architectural1.3.webp">
+                        <img src="assets/architectural_photography/architectural1.4.webp" alt="" class="portfolio-img"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-img="assets/architectural_photography/architectural1.4.webp">
+                        <img src="assets/architectural_photography/architectural1.5.webp" alt="" class="portfolio-img"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-img="assets/architectural_photography/architectural1.5.webp">
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!-- End Portfolio -->
-        <!-- <div class="d-flex justify-content-center my-5">
-            <button class="btn btn-outline-dark me-2" onclick="prevPage()">Prev</button>
-            <button class="btn btn-outline-dark" onclick="nextPage()">Next</button>
-        </div> -->
 
+        <div id="portfolio-pagination" class="text-center my-5"></div>
 
         <!-- Footer -->
         <footer class="footer">
@@ -273,6 +303,7 @@
         <!-- JS-->
         <script src="js/modal.js"></script>
         <script src="js/navbar.js"></script>
+        <script src="js/pagination.js"></script>
 </body>
 
 </html>

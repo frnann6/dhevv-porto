@@ -87,13 +87,13 @@ body{
     transition: 0.3s ease;
 }
 
-.hero .icon-email{
+.hero .icon-linkedin{
     transition: 0.3s ease;
 }
 
 .hero .bg-icon-ig:hover,
 .hero .icon-wa:hover,
-.hero .icon-email:hover
+.hero .icon-linkedin:hover
 {
     transform: scale(1.2);
 }
@@ -190,6 +190,10 @@ body{
     break-inside: avoid;
 }
 
+/* pagination */
+.portfolio-category {
+    /* display: none; */
+}
 
 /* Modal */
 .bg-modal{
