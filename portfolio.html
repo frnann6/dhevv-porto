@@ -56,11 +56,20 @@
                                     <li><a class="dropdown-item" href="#sports">Sports Photography</a></li>
                                     <li><a class="dropdown-item" href="#architectural">Architectural Photography</a>
                                     </li>
+                                    <li><a class="dropdown-item" href="#food">Food Photography</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Design Graphics</a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#menu">Menu Design</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <!-- mobile -->
+
+                    <!-- MOBILE -->
                     <li class="nav-item d-lg-none">
                         <a id="mobileNavPortoBtn" class="nav-link" data-bs-toggle="collapse" href="#portfolioMobile">
                             Portfolio <i class="bi bi-caret-down-fill porto-icon"></i>
@@ -90,6 +99,27 @@
                                             <li>
                                                 <a class="nav-link" href="#architectural">Architectural Photography</a>
                                             </li>
+                                            <li>
+                                                <a class="nav-link" href="#food">Food Photography</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <!-- Design -->
+                                <li class="text-center btn btn-transparent border mt-2">
+                                    <a id="mobileNavButton" class="nav-link" data-bs-toggle="collapse"
+                                        href="#designMobile">
+                                        Design Graphics <i class="bi bi-caret-down-fill design-icon"></i>
+                                    </a>
+
+                                    <div class="collapse" id="designMobile">
+                                        <ul class="navbar-nav">
+                                            <li>
+                                                <a class="nav-link my-0" href="#menu">
+                                                    Menu Design
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </li>
@@ -102,7 +132,8 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-light border" href="/resume.pdf">Resume</a>
+                        <a class="nav-link btn btn-light border" href="assets/Daffa_Ramdhani’s_CV.pdf"
+                            target="_blank">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -115,37 +146,40 @@
         <div class="container">
 
             <!-- header port -->
-            <h1 class="fw-bold text-md-start text-center playfair mb-0">Portfolio</h1>
-            <div class="text-md-start text-center mt-0">—————————————</div>
+            <div id="portfolio-header">
+                <h1 class="fw-bold text-md-start text-center playfair mb-0">Portfolio</h1>
+                <div class="text-md-start text-center mt-0">—————————————</div>
 
-            <div class="mb-5 space">
-                <h6 class="fw-semibold playfair text-start mt-5 mb-4">| Video Content</h6>
-                <h3 class="playfair">Moving Stories
-                </h3>
-                <p class="text-muted text-start mt-4 w-50 desc-photo">
-                    A collection of video content focused on storytelling, pacing, and visual flow. Each piece is
-                    crafted to deliver ideas
-                    through motion, sound, and timing.
-                </p>
-                <p class="text-muted text-startmt-4 w-50 desc-photo"><a
-                        href="https://drive.google.com/drive/folders/1WMfA5gY1seaHJuP47RUXqNo6LF-_SpKy" target="blank"
-                        class="text-success text-decoration-none">📎
-                        G-Drive
-                        Click here</a>
-                </p>
-            </div>
+                <div class="mb-5 space">
+                    <h6 class="fw-semibold playfair text-start mt-5 mb-4">| Video Content</h6>
+                    <h3 class="playfair">Moving Stories
+                    </h3>
+                    <p class="text-muted text-start mt-4 w-50 desc-photo">
+                        A collection of video content focused on storytelling, pacing, and visual flow. Each piece is
+                        crafted to deliver ideas
+                        through motion, sound, and timing.
+                    </p>
+                    <p class="text-muted text-startmt-4 w-50 desc-photo"><a
+                            href="https://drive.google.com/drive/folders/1WMfA5gY1seaHJuP47RUXqNo6LF-_SpKy"
+                            target="blank" class="text-success text-decoration-none">📎
+                            G-Drive
+                            Click here</a>
+                    </p>
+                </div>
 
-            <div class="portfolio-divider"></div>
+                <div class="portfolio-divider"></div>
 
-            <div id="photography" class="mb-5 space">
-                <h6 class="fw-semibold playfair text-start mt-5 mb-4">| Photography</h6>
-                <h3 class="playfair">Through My Lens
-                </h3>
-                <p class="text-muted text-start mt-4 w-50 desc-photo">A collection of photographs that capture real
-                    moments, natural light, and authentic perspectives.
-                    Each
-                    frame is created
-                    to tell a story without words.</p>
+                <!-- Photography -->
+                <div id="photography" class="mb-5 space">
+                    <h6 class="fw-semibold playfair text-start mt-5 mb-4">| Photography</h6>
+                    <h3 class="playfair">Through My Lens
+                    </h3>
+                    <p class="text-muted text-start mt-4 w-50 desc-photo">A collection of photographs that capture real
+                        moments, natural light, and authentic perspectives.
+                        Each
+                        frame is created
+                        to tell a story without words.</p>
+                </div>
             </div>
 
             <div id="humanity" class="humanity portfolio-category my-5">
@@ -201,7 +235,7 @@
                 </div>
             </div>
 
-            <div id="architectural" class="humanity portfolio-category my-5">
+            <div id="architectural" class="humanity portfolio-category mb-5">
                 <h4 class="text-center playfair text-muted kategori">Architectural Photography</h4>
 
                 <!-- image -->
@@ -229,38 +263,86 @@
                 </div>
             </div>
 
-            <div id="architectural" class="humanity portfolio-category my-5">
+            <div id="food" class="humanity portfolio-category my-5">
                 <h4 class="text-center playfair text-muted kategori">Food Photography</h4>
-            
+
                 <!-- image -->
                 <div class="list-archi-humanity mt-5">
                     <div>
-                        <img src="assets/architectural_photography/architectural1.0.webp" alt="" class="portfolio-img"
+                        <img src="assets/food_photography/food1.0.webp" alt="" class="portfolio-img"
                             data-bs-toggle="modal" data-bs-target="#imageModal"
                             data-img="assets/architectural_photography/architectural1.0.webp">
-                        <img src="assets/architectural_photography/architectural1.1.webp" alt="" class="portfolio-img"
+                        <img src="assets/food_photography/food1.1.webp" alt="" class="portfolio-img"
                             data-bs-toggle="modal" data-bs-target="#imageModal"
                             data-img="assets/architectural_photography/architectural1.1.webp">
-                        <img src="assets/architectural_photography/architectural1.2.webp" alt="" class="portfolio-img"
-                            data-bs-toggle="modal" data-bs-target="#imageModal"
-                            data-img="assets/architectural_photography/architectural1.2.webp">
-                        <img src="assets/architectural_photography/architectural1.3.webp" alt="" class="portfolio-img"
-                            data-bs-toggle="modal" data-bs-target="#imageModal"
-                            data-img="assets/architectural_photography/architectural1.3.webp">
-                        <img src="assets/architectural_photography/architectural1.4.webp" alt="" class="portfolio-img"
-                            data-bs-toggle="modal" data-bs-target="#imageModal"
-                            data-img="assets/architectural_photography/architectural1.4.webp">
-                        <img src="assets/architectural_photography/architectural1.5.webp" alt="" class="portfolio-img"
-                            data-bs-toggle="modal" data-bs-target="#imageModal"
-                            data-img="assets/architectural_photography/architectural1.5.webp">
                     </div>
                 </div>
             </div>
 
+            <!-- Design Graphics -->
+            <div id="design-graphics" class="mb-5 space"></div>
+
+            <div id="menu" class="humanity portfolio-category my-5">
+                <h4 class="text-center playfair text-muted kategori">Menu Design for Company</h4>
+
+                <!-- image -->
+                <div class="list-archi-humanity mt-5">
+                    <div>
+                        <img src="assets/design_graphics/menu_cafe_1.webp" alt="" class="portfolio-img"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-img="assets/design_graphics/menu_cafe_1.webp">
+                        <img src="assets/design_graphics/menu_cafe_2.webp" alt="" class="portfolio-img"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-img="assets/design_graphics/menu_cafe_2.webp">
+                    </div>
+                </div>
+            </div>
+
+            <div id="pricelist" class="humanity portfolio-category my-5">
+                <!-- <h4 class="text-center playfair text-muted kategori">Price List Design</h4> -->
+                <div class="portfolio-divider mx-auto"></div>
+
+                <!-- image -->
+                <div class="list-pricelist-design mt-5">
+                    <img src="assets/design_graphics/tegu_pricelist.webp" alt="" class="portfolio-img"
+                        data-bs-toggle="modal" data-bs-target="#imageModal">
+                    <img src="assets/design_graphics/camping_pricelist.webp" alt="" class="portfolio-img"
+                        data-bs-toggle="modal" data-bs-target="#imageModal">
+                    <img src="assets/design_graphics/gallery_camp_tegu.webp" alt="" class="portfolio-img"
+                        data-bs-toggle="modal" data-bs-target="#imageModal">
+                    <img src="assets/design_graphics/venue.webp" alt="" class="portfolio-img" data-bs-toggle="modal"
+                        data-bs-target="#imageModal">
+                    <img src="assets/design_graphics/wedding_1.webp" alt="" class="portfolio-img" data-bs-toggle="modal"
+                        data-bs-target="#imageModal">
+                    <img src="assets/design_graphics/wedding_2.webp" alt="" class="portfolio-img" data-bs-toggle="modal"
+                        data-bs-target="#imageModal">
+                </div>
+            </div>
+
+            <div id="pricelist" class="humanity portfolio-category">
+
+                <!-- image -->
+                <div class="list-humanity">
+                    <img src="assets/design_graphics/design1.0.webp" alt="" class="portfolio-img" data-bs-toggle="modal"
+                        data-bs-target="#imageModal">
+                    <img src="assets/design_graphics/design1.1.webp" alt="" class="portfolio-img" data-bs-toggle="modal"
+                        data-bs-target="#imageModal">
+                    <img src="assets/design_graphics/design1.4.webp" alt="" class="portfolio-img" data-bs-toggle="modal"
+                        data-bs-target="#imageModal">
+                    <img src="assets/design_graphics/design1.5.webp" alt="" class="portfolio-img" data-bs-toggle="modal"
+                        data-bs-target="#imageModal">
+                    <img src="assets/design_graphics/design1.3.webp" alt="" class="portfolio-img" data-bs-toggle="modal"
+                        data-bs-target="#imageModal">
+                </div>
+            </div>
+
+
         </div>
         <!-- End Portfolio -->
 
-        <div id="portfolio-pagination" class="text-center my-5"></div>
+        <div class="container">
+            <div id="portfolio-pagination" class="text-center my-5"></div>
+        </div>
 
         <!-- Footer -->
         <footer class="footer">

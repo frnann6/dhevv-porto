@@ -104,7 +104,7 @@ body{
     padding-top: 50px;
     padding-bottom: 50px;
 
-    background-color: rgb(250, 248, 248);
+    background-color: #F2F1ED;
 }
 
 .about h1{
@@ -136,6 +136,10 @@ body{
 /* portfolio */
 .portfolio{
     margin-top: 150px;
+}
+
+.portfolio-next{
+    margin-top: 100px;
 }
 
 .playfair{
@@ -179,9 +183,17 @@ body{
     column-gap: 10px;
 }
 
+/* design*/
+.list-pricelist-design{
+        display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+}
+
 .list-humanity img,
 .list-sports-humanity img,
-.list-archi-humanity img
+.list-archi-humanity img,
+.list-pricelist-design img
 {
     width: 100%;
     display: block;
@@ -382,6 +394,10 @@ body{
         .list-archi-humanity {
             column-count: 2;
             column-gap: 10px;
+        }
+
+        .list-pricelist-design {
+            grid-template-columns: repeat(2, 1fr);
         }
 
     .desc-photo{

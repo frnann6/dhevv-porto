@@ -1,25 +1,132 @@
-const categories = document.querySelectorAll(".portfolio-category");
+document.addEventListener("DOMContentLoaded", () => {
+  const categories = document.querySelectorAll(".portfolio-category");
+  const paginationContainer = document.getElementById("portfolio-pagination");
 
-const perPage = 2;
-let currentPage = 1;
+  const designContainer = document.getElementById("design-graphics");
+  const designDesc = `
+   <h6 class="fw-semibold playfair text-start mb-4">| Design Graphics</h6>
+    <h3 class="playfair">Designed with Purpose</h3>
+    <p class="text-muted text-start mt-4 w-50 desc-photo">
+        A selection of design works focused on clarity, balance, and visual impact. Each piece is created with intention, aligning ideas with strong visual execution.
+    </p>
+  `;
 
-function showPage(page) {
-  currentPage = page;
+  const itemsPerPage = 2;
+  let currentPage = 1;
+  const totalPages = Math.ceil(categories.length / itemsPerPage);
 
-  categories.forEach((cat) => (cat.style.display = "none"));
-
-  const start = (page - 1) * perPage;
-  const end = start + perPage;
-
-  for (let i = start; i < end && i < categories.length; i++) {
-    categories[i].style.display = "block";
+  function showPage(page) {
+    categories.forEach((cat, index) => {
+      cat.style.display = "none";
+      if (index >= (page - 1) * itemsPerPage && index < page * itemsPerPage) {
+        cat.style.display = "block";
+      }
+    });
   }
 
-  renderPagination();
-}
+  function renderPagination() {
+    paginationContainer.innerHTML = "";
 
-// Button
-function renderPagination() {
-  const container = document.getElementById("portfolio-pagination");
-  container.innerHTML = "";
-}
+    const maxVisible = 3;
+
+    // hitung range angka
+    let start = Math.max(1, currentPage - 1);
+    let end = start + maxVisible - 1;
+
+    if (end > totalPages) {
+      end = totalPages;
+      start = Math.max(1, end - maxVisible + 1);
+    }
+
+    // tombol back
+    const backBtn = document.createElement("button");
+    backBtn.innerHTML = "&laquo;";
+    backBtn.className = "btn btn-outline-secondary mx-1";
+    backBtn.disabled = currentPage === 1;
+    backBtn.onclick = () => {
+      currentPage--;
+      updatePagination();
+    };
+    paginationContainer.appendChild(backBtn);
+
+    // angka halaman
+    for (let i = start; i <= end; i++) {
+      const btn = document.createElement("button");
+      btn.innerText = i;
+      btn.className =
+        "btn mx-1 " +
+        (i === currentPage ? "btn-dark" : "btn-outline-secondary");
+
+      btn.onclick = () => {
+        currentPage = i;
+        updatePagination();
+      };
+
+      paginationContainer.appendChild(btn);
+    }
+
+    // tombol next
+    const nextBtn = document.createElement("button");
+    nextBtn.innerHTML = "&raquo;";
+    nextBtn.className = "btn btn-outline-secondary mx-1";
+    nextBtn.disabled = currentPage === totalPages;
+    nextBtn.onclick = () => {
+      currentPage++;
+      updatePagination();
+    };
+    paginationContainer.appendChild(nextBtn);
+  }
+
+  const port_header = document.getElementById("portfolio-header");
+
+  function updatePagination() {
+    showPage(currentPage);
+    renderPagination();
+
+    // tampilkan header hanya di halaman 1
+    if (currentPage === 1) {
+      port_header.style.display = "block";
+    } else {
+      port_header.style.display = "none";
+    }
+
+    // Tampilkan deskripsi hanya di halaman 3
+    if (currentPage === 3) {
+      designContainer.innerHTML = designDesc;
+    } else {
+      designContainer.innerHTML = "";
+    }
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  // Mapping kategori ke halaman
+  const sectionPageMap = {
+    humanity: 1,
+    sports: 1,
+    architectural: 2,
+    food: 2,
+    menu: 3,
+  };
+
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href").substring(1);
+
+      if (sectionPageMap[targetId]) {
+        e.preventDefault();
+
+        currentPage = sectionPageMap[targetId];
+        updatePagination();
+
+        setTimeout(() => {
+          document
+            .getElementById(targetId)
+            .scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    });
+  });
+
+  updatePagination();
+});
