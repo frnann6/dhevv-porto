@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const categories = document.querySelectorAll(".portfolio-category");
   const paginationContainer = document.getElementById("portfolio-pagination");
 
-  const designContainer = document.getElementById("design-graphics");
+  const designContainer = document.getElementById("design_graphics");
   const designDesc = `
    <h6 class="fw-semibold playfair text-start mb-4">| Design Graphics</h6>
     <h3 class="playfair">Designed with Purpose</h3>
@@ -106,6 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     sports: 1,
     architectural: 2,
     food: 2,
+    design_graphics: 3,
     menu: 3,
   };
 
@@ -128,5 +129,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // cek hash saat halaman dibuka
+  const hash = window.location.hash.replace("#", "");
+
+  if (sectionPageMap[hash]) {
+    currentPage = sectionPageMap[hash];
+  }
+
   updatePagination();
+
+  // scroll setelah pagination selesai
+  if (hash) {
+    setTimeout(() => {
+      const target = document.getElementById(hash);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  }
 });
