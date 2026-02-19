@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     paginationContainer.appendChild(nextBtn);
   }
 
-  const port_header = document.getElementById("portfolio-header");
+  const port_header = document.getElementById("portfolio_header");
 
   function updatePagination() {
     showPage(currentPage);
@@ -102,6 +102,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Mapping kategori ke halaman
   const sectionPageMap = {
+    portfolio_header: 1,
+    photography: 1,
     humanity: 1,
     sports: 1,
     architectural: 2,
