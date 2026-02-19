@@ -15,6 +15,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -134,7 +135,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-light border" href="assets/Daffa_Ramdhani’s_CV.pdf"
@@ -191,6 +192,7 @@
                 <!-- Text -->
                 <div class="col-md-6 text ps-md-5">
                     <h1 class="fw-bold text-md-start">About Me</h1>
+                    <div class="title-line"></div>
                     <p class="text-md-start text-muted">Hi, I’m Daffa Ramdhani, a Photographer and Designer
                         passionate
                         about
@@ -212,6 +214,56 @@
     </div>
     <!-- end About -->
 
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-header">
+                        <h2 class="contact-title">Contact Me</h2>
+                        <div class="title-line"></div>
+                    </div>
+
+                    <p class="contact-desc">
+                        Have a project in mind or need a Photographer or Designer to bring
+                        your vision to life? I'd love to hear from you!
+                    </p>
+
+                    <!-- Submit Form for Netlify Forms -->
+                    <form name="contact" method="POST" data-netlify="true">
+
+                        <input type="hidden" name="form-name" value="contact">
+
+                        <div class="row mb-4">
+                            <div class="col-md-6 contact-name">
+                                <input type="text" name="name" class="form-control" placeholder="Your name" required>
+                            </div>
+
+                            <div class="col-md-6 contact-email">
+                                <input type="email" name="email" class="form-control" placeholder="Your email" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <input class="form-control" name="message" placeholder="Your Message" rows="4" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-send">
+                            SEND IT
+                        </button>
+
+                    </form>
+                </div>
+                <div class="col-md-6 d-none d-md-block text-center">
+                    <img src="" alt="Gambar">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="row align-items-center">
@@ -224,6 +276,7 @@
             </div>
         </div>
     </footer>
+    <!-- End Footer -->
 
     <!-- Modal navbar profile -->
     <div class="modal fade px-2" id="profileModal" tabindex="-1">

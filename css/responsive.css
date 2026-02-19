@@ -1,0 +1,173 @@
+/* RESPONSIVE */
+@media (min-width: 992px) {
+    .dropdown-submenu:hover>.dropdown-menu {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar ul {
+        margin-top: 20px;
+    }
+
+    .navbar li {
+        text-align: center;
+    }
+
+    .navbar .dropdown-menu {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-10px);
+        min-width: 200px;
+        text-align: left;
+        margin-top: 8px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .dropdown-menu.show {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    /* about */
+    .about .text {
+        margin-top: 20px;
+    }
+
+    .about img {
+        margin-bottom: 20px;
+    }
+
+    .about h1 {
+        margin-bottom: 30px;
+    }
+
+    .about p {
+        width: auto;
+        margin-top: 0;
+    }
+
+    /* Portfolio */
+    .list-humanity {
+        column-count: 2;
+        column-gap: 20px;
+    }
+
+    .list-sports-humanity {
+        column-count: 2;
+        column-gap: 10px;
+    }
+
+    .list-archi-humanity {
+        column-count: 2;
+        column-gap: 10px;
+    }
+
+    /* modal */
+    #profileModal img {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* nav */
+    .navbar-brand {
+        padding-left: 16px;
+    }
+
+    /* hero */
+    .hero .hero-txt {
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero img {
+        margin-top: 50px;
+        padding-top: 0;
+    }
+
+    .hero .icons {
+        justify-content: center;
+    }
+
+    .hero .icons h3 {
+        font-size: 28px;
+    }
+
+    /* About */
+    .about {
+        /* padding-left: 10px;
+        padding-right: 10px; */
+    }
+
+    .about img {}
+
+    .about h1 {
+        font-size: 35px;
+    }
+
+    .about p {}
+
+    /* Portfolio */
+    .portfolio-divider {
+        width: 70%;
+        margin: 40px auto;
+        /* auto kiri-kanan = center */
+    }
+
+    .list-humanity {
+        column-count: 2;
+        column-gap: 20px;
+    }
+
+    .list-sports-humanity {
+        column-count: 2;
+        column-gap: 10px;
+    }
+
+    .list-archi-humanity {
+        column-count: 2;
+        column-gap: 10px;
+    }
+
+    .list-pricelist-design {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .desc-photo {
+        width: 100% !important;
+    }
+
+    .kategori {
+        font-size: 16px;
+    }
+
+    .space {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    hr {
+        width: 50%;
+    }
+
+    /* Contact */
+    .contact-header{
+        margin: auto;
+    }
+
+    .contact-title{
+        font-size: 35px;
+    }
+
+    .contact-email{
+        margin-top: 20px;
+    }
+}
