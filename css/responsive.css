@@ -111,9 +111,14 @@
 
     .about h1 {
         font-size: 35px;
+        margin-bottom: 0;
     }
 
-    .about p {}
+    .about .title-line {
+        margin: 0px auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
 
     /* Portfolio */
     .portfolio-divider {
