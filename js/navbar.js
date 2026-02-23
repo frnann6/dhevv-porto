@@ -5,7 +5,9 @@ const collapseDesign = document.getElementById("designMobile");
 
 const portoIcon = document.querySelector(".porto-icon");
 const photoIcon = document.querySelector(".photo-icon");
-const designIcon = document.querySelector(".design-icon");
+const designIcon = document.querySelector(
+  "a[href='#designMobile'] .design-icon",
+);
 
 // PORTFOLIO
 collapsePorto.addEventListener("show.bs.collapse", (e) => {
