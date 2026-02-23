@@ -10,34 +10,34 @@ const designIcon = document.querySelector(".design-icon");
 // PORTFOLIO
 collapsePorto.addEventListener("show.bs.collapse", (e) => {
   if (e.target !== collapsePorto) return;
-  portoIcon.classList.replace("bi-caret-down-fill", "bi-caret-up-fill");
+  portoIcon.classList.add("rotate-100");
 });
 
 collapsePorto.addEventListener("hide.bs.collapse", (e) => {
   if (e.target !== collapsePorto) return;
-  portoIcon.classList.replace("bi-caret-up-fill", "bi-caret-down-fill");
+  portoIcon.classList.remove("rotate-100");
 });
 
 // PHOTOGRAPHY
 collapsePhoto.addEventListener("show.bs.collapse", (e) => {
   if (e.target !== collapsePhoto) return;
-  photoIcon.classList.replace("bi-caret-down-fill", "bi-caret-up-fill");
+  photoIcon.classList.add("rotate-100");
 });
 
 collapsePhoto.addEventListener("hide.bs.collapse", (e) => {
   if (e.target !== collapsePhoto) return;
-  photoIcon.classList.replace("bi-caret-up-fill", "bi-caret-down-fill");
+  photoIcon.classList.remove("rotate-100");
 });
 
 // DESIGN
 collapseDesign.addEventListener("show.bs.collapse", (e) => {
   if (e.target !== collapseDesign) return;
-  designIcon.classList.replace("bi-caret-down-fill", "bi-caret-up-fill");
+  designIcon.classList.add("rotate-100");
 });
 
 collapseDesign.addEventListener("hide.bs.collapse", (e) => {
   if (e.target !== collapseDesign) return;
-  designIcon.classList.replace("bi-caret-up-fill", "bi-caret-down-fill");
+  designIcon.classList.remove("rotate-100");
 });
 
 //

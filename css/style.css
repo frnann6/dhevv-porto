@@ -15,10 +15,32 @@ body{
     flex-direction: column;
 }
 
+.font-1{
+    font-family: "Playfair Display", serif;
+}
+
 /* nav */
 .nv img{
     height: 40px;
     border-radius: 50px;
+}
+
+.nav-bg{
+        background: rgba(221, 221, 221, 0.528);
+        /* background: rgba(255, 255, 255, 0.3); */
+        backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+}
+
+.bg-menu-mobile{
+            background: rgba(211, 211, 211, 0.528);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
 }
 
 /* base state */
@@ -56,6 +78,10 @@ body{
     visibility: visible;
 }
 
+.rotate-100 {
+    transform: rotate(180deg);
+}
+
 /* hero */
 
 .ramdhani{
@@ -69,6 +95,7 @@ body{
 
 .hero h1 {
     font-size: 3rem;
+    font-family: "Playfair Display", serif;
 }
 
 .hero img{
