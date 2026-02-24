@@ -20,16 +20,24 @@ body{
 }
 
 /* nav */
+.navbar{
+    transition: all 0.5s ease;
+    padding: 5px 0 5px 0;
+}
+
 .nv img{
     height: 40px;
     border-radius: 50px;
 }
 
-.nav-bg{
+.navbar.scrolling-active,
+.menu-open{
         background: rgba(221, 221, 221, 0.528);
         /* background: rgba(255, 255, 255, 0.3); */
         backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
+        box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.122);
+        padding: 9px 0 9px 0;
 }
 
 .bg-menu-mobile{

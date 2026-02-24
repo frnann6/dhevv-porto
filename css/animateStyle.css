@@ -1,0 +1,30 @@
+/* Animate Style */
+
+/* Hero */
+.hero h4{
+    --animate-delay: 0.7s;
+}
+
+.hero h1{
+    --animate-delay: 1.2s;
+}
+
+.hero p{
+    --animate-delay: 1.5s;
+}
+
+.hero .bg-icon-ig{
+    --animate-delay: 2s;
+}
+
+.hero .icon-wa{
+    --animate-delay: 2.2s;
+}
+
+.hero .icon-linkedin{
+    --animate-delay: 2.4s;
+}
+
+.hero .view-button{
+    --animate-delay: 2.6s;
+}

@@ -1,3 +1,23 @@
+// scroll
+const navBar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+  const windowPosition = window.scrollY > 60;
+  navBar.classList.toggle("scrolling-active", windowPosition);
+});
+
+// Humburger
+const navbar = document.querySelector(".navbar");
+const menuCollapse = document.querySelector("#navbarNav");
+
+menuCollapse.addEventListener("show.bs.collapse", function () {
+  navbar.classList.add("menu-open");
+});
+
+menuCollapse.addEventListener("hide.bs.collapse", function () {
+  navbar.classList.remove("menu-open");
+});
+
 // Submenu
 const collapsePorto = document.getElementById("portfolioMobile");
 const collapsePhoto = document.getElementById("photoMobile");
