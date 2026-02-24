@@ -22,7 +22,7 @@ body{
 /* nav */
 .navbar{
     transition: all 0.5s ease;
-    padding: 5px 0 5px 0;
+    padding: 6px 0 0 0;
 }
 
 .nv img{
@@ -44,6 +44,10 @@ body{
             background: rgba(211, 211, 211, 0.528);
                 backdrop-filter: blur(20px);
                 -webkit-backdrop-filter: blur(20px);
+}
+
+.navbar-toggler{
+    border: none !important;
 }
 
 .navbar-toggler:focus {
