@@ -115,24 +115,27 @@ body{
 }
 
 .hero .bg-icon-ig{
+    display: inline-block;
     background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
     transition: 0.3s ease;
 }
 
-.hero .icon-wa{
+.hero .bg-icon-wa{
+    display: inline-block;
     color:  #25D366;
     transition: 0.3s ease;
 }
 
-.hero .icon-linkedin{
+.hero .bg-icon-linkedin{
+    display: inline-block;
     transition: 0.3s ease;
 }
 
 .hero .bg-icon-ig:hover,
-.hero .icon-wa:hover,
-.hero .icon-linkedin:hover
+.hero .bg-icon-wa:hover,
+.hero .bg-icon-linkedin:hover
 {
     transform: scale(1.2);
 }
@@ -159,7 +162,7 @@ body{
 }
 
 .about img{
-    width: auto;
+    width: 100%;
 }
 
 .about .btn-porto{
