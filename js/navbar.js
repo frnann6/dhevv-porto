@@ -6,18 +6,6 @@ window.addEventListener("scroll", () => {
   navBar.classList.toggle("scrolling-active", windowPosition);
 });
 
-// Humburger
-const navbar = document.querySelector(".navbar");
-const menuCollapse = document.querySelector("#navbarNav");
-
-menuCollapse.addEventListener("show.bs.collapse", function () {
-  navbar.classList.add("menu-open");
-});
-
-menuCollapse.addEventListener("hide.bs.collapse", function () {
-  navbar.classList.remove("menu-open");
-});
-
 // Submenu
 const collapsePorto = document.getElementById("portfolioMobile");
 const collapsePhoto = document.getElementById("photoMobile");
@@ -28,6 +16,22 @@ const photoIcon = document.querySelector(".photo-icon");
 const designIcon = document.querySelector(
   "a[href='#designMobile'] .design-icon",
 );
+
+// === MOBILE ===
+
+// Humburger
+const navbar = document.querySelector(".navbar");
+const menuCollapse = document.querySelector("#navbarNav");
+
+menuCollapse.addEventListener("show.bs.collapse", function (e) {
+  if (e.target !== menuCollapse) return;
+  navbar.classList.add("menu-open");
+});
+
+menuCollapse.addEventListener("hide.bs.collapse", function (e) {
+  if (e.target !== menuCollapse) return;
+  navbar.classList.remove("menu-open");
+});
 
 // PORTFOLIO
 collapsePorto.addEventListener("show.bs.collapse", (e) => {
