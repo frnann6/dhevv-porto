@@ -13,6 +13,10 @@
     --animate-delay: 1.5s;
 }
 
+.hero img{
+    --animate-delay: 1.5s; 
+}
+
 .hero .icon-ig{
     --animate-delay: 2s;
 }
