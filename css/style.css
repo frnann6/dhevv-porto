@@ -367,6 +367,11 @@ textarea.form-control {
     background: #333;
 }
 
+#contact img{
+    width: 400px;
+    height: 400px;
+}
+
 /* Footer */
 .footer {
     padding: 20px 0;
