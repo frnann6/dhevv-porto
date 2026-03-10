@@ -97,7 +97,22 @@ document.addEventListener("DOMContentLoaded", () => {
       designContainer.innerHTML = "";
     }
 
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    function updatePagination(scrollTop = true) {
+      showPage(currentPage);
+      renderPagination();
+
+      if (port_header) {
+        port_header.style.display = currentPage === 1 ? "block" : "none";
+      }
+
+      if (designContainer) {
+        designContainer.innerHTML = currentPage === 3 ? designDesc : "";
+      }
+
+      if (scrollTop) {
+        window.scrollTo({ top: 0 });
+      }
+    }
   }
 
   // Mapping kategori ke halaman

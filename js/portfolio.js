@@ -71,7 +71,7 @@ const portfolioData = {
 
 function renderAllGalleries() {
   Object.keys(portfolioData).forEach((category) => {
-    const container = document.getElementById(`gallery-${category}`);
+    const container = document.getElementById(`${category}`);
     if (!container) return;
 
     const data = portfolioData[category];
