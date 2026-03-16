@@ -79,17 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const port_header = document.getElementById("portfolio_header");
 
-  function updatePagination() {
-    showPage(currentPage);
-    renderPagination();
-
-    // tampilkan header hanya di halaman 1
-    if (currentPage === 1) {
-      port_header.style.display = "block";
-    } else {
-      port_header.style.display = "none";
-    }
-
     // Tampilkan deskripsi hanya di halaman 3
     if (currentPage === 3) {
       designContainer.innerHTML = designDesc;
@@ -113,7 +102,8 @@ document.addEventListener("DOMContentLoaded", () => {
         window.scrollTo({ top: 0 });
       }
     }
-  }
+    updatePagination();
+  
 
   // Mapping kategori ke halaman
   const sectionPageMap = {
@@ -141,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
           document
             .getElementById(targetId)
             .scrollIntoView({ behavior: "smooth" });
-        }, 100);
+        }, 0);
       }
     });
   });
@@ -162,6 +152,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (target) {
         target.scrollIntoView({ behavior: "smooth" });
       }
-    }, 100);
+    }, 0);
   }
 });
