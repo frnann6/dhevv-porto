@@ -387,6 +387,50 @@
             }
         };
     </script>
+
+<script>
+    history.scrollRestoration = "manual";
+
+    window.addEventListener("load", function () {
+
+        const isRefresh = performance.getEntriesByType("navigation")[0].type === "reload";
+
+        if (isRefresh) {
+            window.scrollTo(0, 0);
+
+            if (window.location.hash) {
+                history.replaceState(null, null, window.location.pathname);
+            }
+        }
+
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        if (window.location.hash && document.referrer) {
+
+            try {
+                const currentHost = window.location.hostname;
+                const referrerHost = new URL(document.referrer).hostname;
+
+                if (currentHost === referrerHost) {
+                    document.body.classList.add("no-animation");
+
+                    // matikan AOS juga
+                    const aosElements = document.querySelectorAll("[data-aos]");
+                    aosElements.forEach(el => {
+                        el.removeAttribute("data-aos");
+                    });
+                }
+
+            } catch (e) { }
+
+        }
+
+    });
+</script>
 </body>
 
 </html>

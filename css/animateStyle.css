@@ -32,3 +32,7 @@
 .hero .view-button{
     --animate-delay: 2.6s;
 }
+
+.no-animation * {
+    animation: none !important;
+}
