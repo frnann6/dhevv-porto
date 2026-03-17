@@ -62,9 +62,6 @@
                             </li>
 
                             <!-- submenu -->
-                             <li>
-                                <a class="nav-link font-1 fw-semibold">Content Categories</a>
-                             </li>
                             <li>
                                 <a href="portfolio.html" class="dropdown-item">Video Content</a>
                             </li>
@@ -109,7 +106,6 @@
 
                         <div class="collapse" id="portfolioMobile">
                             <ul class="navbar-nav">
-                                <p class="text-start px-4 py-2 fw-semibold font-1 btn-transparent bg-menu-mobile rounded-2">Content Categories</p>
 
                                 <li class="text-start px-4 px-lg-0 btn btn-transparent border mb-2 bg-menu-mobile">
                                     <a class="nav-link fw-semibold" href="portfolio.html#">
@@ -386,7 +382,9 @@
 
     <script>
         window.onload = function () {
+            if(!window.location.hash){
             window.scrollTo(0, 0);
+            }
         };
     </script>
 </body>
