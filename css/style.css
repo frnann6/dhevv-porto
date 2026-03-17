@@ -98,6 +98,10 @@ body{
     transform: rotate(180deg);
 }
 
+.rotate-50 {
+    transform: rotate(270deg);
+}
+
 /* hero */
 
 .ramdhani{
