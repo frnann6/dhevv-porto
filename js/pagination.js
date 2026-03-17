@@ -109,15 +109,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const sectionPageMap = {
     portfolio_header: 1,
     photography: 1,
-    humanity: 1,
-    sports: 1,
-    architectural: 2,
-    food: 2,
+    humanity_page: 1,
+    sports_page: 1,
+    architectural_page: 2,
+    food_page: 2,
     design_graphics: 3,
-    menu: 3,
+    menu_page: 3,
   };
 
-  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  document.querySelectorAll('a[href*="#"]').forEach((link) => {
     link.addEventListener("click", function (e) {
       const targetId = this.getAttribute("href").substring(1);
 
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
           document
             .getElementById(targetId)
             .scrollIntoView({ behavior: "smooth" });
-        }, 0);
+        }, 100);
       }
     });
   });
@@ -152,6 +152,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (target) {
         target.scrollIntoView({ behavior: "smooth" });
       }
-    }, 0);
+    }, 100);
   }
 });
