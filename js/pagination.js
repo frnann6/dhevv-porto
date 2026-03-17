@@ -146,12 +146,18 @@ document.addEventListener("DOMContentLoaded", () => {
   updatePagination();
 
   // scroll setelah pagination selesai
-  if (hash) {
-    setTimeout(() => {
-      const target = document.getElementById(hash);
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth" });
-      }
-    }, 100);
-  }
+if (hash) {
+  setTimeout(() => {
+    const target = document.getElementById(hash);
+
+    if (target) {
+      requestAnimationFrame(() => {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      });
+    }
+  }, 300);
+}
 });
