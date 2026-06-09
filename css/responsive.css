@@ -176,3 +176,130 @@
         margin-top: 20px;
     }
 }
+
+/* About Section Responsive */
+@media (max-width: 991px) {
+    .about-section h1 {
+        font-size: 2.5rem;
+        color: #1a1a1a;
+    }
+
+    .about-section .lead {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .song-card {
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .song-cover {
+        width: 56px;
+        height: 56px;
+    }
+
+    .btn-play {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-section {
+        margin-top: 30px;
+        padding: 40px 20px !important;
+    }
+
+    .about-section h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #1a1a1a;
+    }
+
+    .about-section .lead {
+        font-size: 15px;
+        margin-bottom: 15px;
+        color: #555;
+    }
+
+    .about-section > .container > .row > div:last-child {
+        margin-top: 30px;
+    }
+
+    .about-image {
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    .about-image:hover {
+        transform: scale(1.02) translateY(-4px);
+    }
+
+    /* Song cards mobile */
+    .song-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .song-card:hover {
+        transform: translateY(-2px);
+    }
+
+    .song-cover {
+        width: 100px;
+        height: 100px;
+    }
+
+    .song-content {
+        text-align: center;
+    }
+
+    .song-content h6 {
+        font-size: 15px;
+    }
+
+    .song-content small {
+        font-size: 13px;
+    }
+
+    .btn-play {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+
+    /* Title line on mobile */
+    .about-section .d-flex {
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    .about-section .d-flex .title-line {
+        margin-bottom: 15px;
+        margin-right: 0 !important;
+    }
+
+    .about-section .d-flex h3 {
+        font-size: 24px;
+        color: #1a1a1a;
+    }
+
+    /* Spotify embed on mobile */
+    .spotify-embed-container {
+        padding: 8px;
+    }
+
+    .spotify-embed-container iframe {
+        height: 220px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .spotify-embed-container iframe {
+        height: 152px !important;
+    }
+}
