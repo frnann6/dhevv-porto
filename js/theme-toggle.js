@@ -1,6 +1,6 @@
 // Theme Toggle Functionality
 document.addEventListener('DOMContentLoaded', function() {
-    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const themeToggleBtns = document.querySelectorAll('.themeToggleBtn');
     const htmlElement = document.documentElement;
     const body = document.body;
     const themeIcon = document.querySelector('.theme-icon');
@@ -20,20 +20,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Theme toggle button click handler
-    themeToggleBtn.addEventListener('click', function() {
-        if (body.classList.contains('dark-mode')) {
-            // Switch to light mode
-            body.classList.remove('dark-mode');
-            htmlElement.style.colorScheme = 'light';
-            localStorage.setItem('theme', 'light');
-            updateThemeIcon('light');
-        } else {
-            // Switch to dark mode
-            body.classList.add('dark-mode');
-            htmlElement.style.colorScheme = 'dark';
-            localStorage.setItem('theme', 'dark');
-            updateThemeIcon('dark');
-        }
+    themeToggleBtns.forEach((btn) => {
+    btn.addEventListener("click", function () {
+    if (body.classList.contains("dark-mode")) {
+      body.classList.remove("dark-mode");
+      htmlElement.style.colorScheme = "light";
+      localStorage.setItem("theme", "light");
+      updateThemeIcon("light");
+    } else {
+      body.classList.add("dark-mode");
+      htmlElement.style.colorScheme = "dark";
+      localStorage.setItem("theme", "dark");
+      updateThemeIcon("dark");
+            }
+        });
     });
     
     // Update theme icon based on current theme

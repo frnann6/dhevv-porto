@@ -26,6 +26,12 @@
                 <img src="assets/daffa.PNG" alt="" id="profileImg" style="cursor:pointer;">
                 <div class="py-2 mx-2 fw-bold font-1">Daffa Ramdhani</div>
             </div>
+
+            <button class="nav-link btn py-2 mx-3 rounded-circle theme-toggle-btn d-lg-none themeToggleBtn"
+                title="Toggle dark mode">
+                <i class="bi bi-moon-stars theme-icon"></i>
+            </button>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,7 +42,7 @@
                         <a class="nav-link" aria-current="page" href="index.html#">Home</a>
                     </li>
                     <li class="nav-item text-start px-4 px-lg-0">
-                        <a class="nav-link" href="index.html#about">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <!-- dekstop -->
                     <li class="nav-item dropdown d-none d-lg-block">
@@ -49,9 +55,9 @@
                             </li>
 
                             <!-- submenu -->
-                             <li>
+                            <li>
                                 <a href="#" class="dropdown-item">Video Content</a>
-                             </li>
+                            </li>
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item dropdown-toggle" href="#photography_page">Photography</a>
 
@@ -94,9 +100,11 @@
                             <ul class="navbar-nav">
                                 <li class="text-start px-4 px-lg-0 btn btn-transparent border mb-2 bg-menu-mobile">
                                     <a class="nav-link fw-semibold" href="portfolio.html#">
-                                        Video Content <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-chevron-down transform transition-transform photo-icon rotate-50" aria-hidden="true">
+                                        Video Content <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-chevron-down transform transition-transform photo-icon rotate-50"
+                                            aria-hidden="true">
                                             <path d="m6 9 6 6 6-6"></path>
                                         </svg>
                                     </a>
@@ -173,12 +181,13 @@
                     <li class="nav-item">
                         <a class="nav-link text-start px-4 px-lg-0" href="index.html#contact">Contact</a>
                     </li>
-                    <li class="nav-item">                        
-                        <button id="themeToggleBtn" class="nav-link btn py-2 mx-3 rounded-circle theme-toggle-btn" title="Toggle dark mode">
+                    <li class="nav-item d-none d-lg-block">
+                        <button class="nav-link btn py-2 mx-3 rounded-circle theme-toggle-btn themeToggleBtn"
+                            title="Toggle dark mode">
                             <i class="bi bi-moon-stars theme-icon"></i>
                         </button>
                     </li>
-                    <li class="nav-item">                        
+                    <li class="nav-item">
                         <a class="nav-link btn btn-light ramdhani border border-opacity-25 border-secondary"
                             href="assets/Daffa_Ramdhani’s_CV.pdf" target="_blank">Resume
                         </a>
@@ -310,7 +319,8 @@
         <div class="modal fade px-2" id="portfolioModal" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content bg-modal py-5 rounded-4 border-0 position-relative">
-                    <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                     <img id="portfolioModalImg" class="img-fluid" alt="">
                 </div>
             </div>
@@ -320,7 +330,8 @@
         <div class="modal fade bg-modal-profile px-2" id="profileModal" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content bg-transparent py-5 rounded-4 border-0 position-relative">
-                    <button type="button" class="btn-close btn-close-modal btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-modal btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                     <img id="profileModalImg" class="img-fluid" alt="">
                 </div>
             </div>
