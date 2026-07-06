@@ -26,229 +26,246 @@
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg nav-bg fixed-top animate__animated animate__fadeInDown">
-        <div class="container nv px-2">
-            <div class="navbar-brand d-flex" href="#">
-                <img src="assets/daffa.PNG" alt="" id="profileImg" style="cursor:pointer;">
-                <div class="py-2 mx-2 fw-bold font-1">Daffa Ramdhani</div>
-            </div>
+    <div class="site-wrapper">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg nav-bg fixed-top animate__animated animate__fadeInDown">
+            <div class="container nv px-2">
+                <div class="navbar-brand d-flex" href="#">
+                    <img src="assets/daffa.PNG" alt="" id="profileImg" style="cursor:pointer;">
+                    <div class="py-2 mx-2 fw-bold font-1">Daffa Ramdhani</div>
+                </div>
 
-            <button class="nav-link btn py-2 mx-3 rounded-circle theme-toggle-btn d-lg-none themeToggleBtn" title="Toggle dark mode">
-                <i class="bi bi-moon-stars theme-icon"></i>
-            </button>
+                <button class="nav-link btn py-2 mx-3 rounded-circle theme-toggle-btn d-lg-none themeToggleBtn"
+                    title="Toggle dark mode">
+                    <i class="bi bi-moon-stars theme-icon"></i>
+                </button>
 
-            <button class="navbar-toggler px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fw-semibold gap-3">
-                    <li class="nav-item text-start px-4 px-lg-0">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item text-start px-4 px-lg-0">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <!-- dekstop -->
-                    <li class="nav-item dropdown d-none d-lg-block">
-                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                            data-bs-toggle="dropdown">Portfolio</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-
-                            <!-- submenu -->
-                            <li>
-                                <a href="portfolio.html" class="dropdown-item">Video Content</a>
-                            </li>
-                            <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle"
-                                    href="portfolio.html#photography">Photography</a>
-
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="portfolio.html#humanity_page">Humanity
-                                            Photography</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="portfolio.html#sports_page">Sports
-                                            Photography</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="portfolio.html#architectural_page">Architectural
-                                            Photography</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="portfolio.html#food_page">Food Photography</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle" href="portfolio.html#design_graphics">Design
-                                    Graphics</a>
-
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="portfolio.html#menu_page">Menu Design</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <!-- PORTFOLIO MOBILE -->
-                    <li class="nav-item d-lg-none">
-                        <a id="mobileNavPortoBtn" class="nav-link text-start px-4 px-lg-0" data-bs-toggle="collapse"
-                            href="#portfolioMobile">
-                            Portfolio <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-chevron-down transform transition-transform design-icon porto-icon"
-                                aria-hidden="true">
-                                <path d="m6 9 6 6 6-6"></path>
-                            </svg>
-                        </a>
-
-                        <div class="collapse" id="portfolioMobile">
-                            <ul class="navbar-nav">
-
-                                <li class="text-start px-4 px-lg-0 btn btn-transparent border mb-2 bg-menu-mobile">
-                                    <a class="nav-link fw-semibold" href="portfolio.html#">
-                                        Video Content <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-chevron-down transform transition-transform photo-icon rotate-50"
-                                            aria-hidden="true">
-                                            <path d="m6 9 6 6 6-6"></path>
-                                        </svg>
-                                    </a>
+                <button class="navbar-toggler px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto fw-semibold gap-3">
+                        <li class="nav-item text-start px-4 px-lg-0">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item text-start px-4 px-lg-0">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <!-- dekstop -->
+                        <li class="nav-item dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Portfolio</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
                                 </li>
 
-                                <li class="text-start px-4 px-lg-0 border btn btn-transparent bg-menu-mobile">
-                                    <a id="mobileNavButton" class="nav-link fw-semibold" data-bs-toggle="collapse"
-                                        href="#photoMobile">
-                                        Photography <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-chevron-down transform transition-transform photo-icon"
-                                            aria-hidden="true">
-                                            <path d="m6 9 6 6 6-6"></path>
-                                        </svg>
-                                    </a>
-
-                                    <div class="collapse" id="photoMobile">
-                                        <ul class="navbar-nav">
-                                            <li>
-                                                <a class="nav-link text-start px-4 px-lg-0 fw-semibold opacity-75"
-                                                    href="portfolio.html#humanity_page">
-                                                    Humanity Photography
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link text-start px-4 px-lg-0 fw-semibold opacity-75"
-                                                    href="portfolio.html#sports_page">
-                                                    Sports Photography
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link text-start px-4 px-lg-0 fw-semibold opacity-75"
-                                                    href="portfolio.html#architectural_page">Architectural
-                                                    Photography</a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link text-start px-4 px-lg-0 fw-semibold opacity-75"
-                                                    href="portfolio.html#food_page">Food Photography</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                <!-- submenu -->
+                                <li>
+                                    <a href="portfolio.html" class="dropdown-item">Video Content</a>
                                 </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle"
+                                        href="portfolio.html#photography">Photography</a>
 
-                                <!-- Design -->
-                                <li class="text-start px-4 px-lg-0 btn btn-transparent border mt-2 bg-menu-mobile">
-                                    <a id="mobileNavButton" class="nav-link fw-semibold" data-bs-toggle="collapse"
-                                        href="#designMobile">
-                                        Design Graphics <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-chevron-down transform transition-transform design-icon"
-                                            aria-hidden="true">
-                                            <path d="m6 9 6 6 6-6"></path>
-                                        </svg>
-                                    </a>
-
-                                    <div class="collapse" id="designMobile">
-                                        <ul class="navbar-nav">
-                                            <li>
-                                                <a class="nav-link my-0 text-start px-4 px-lg-0 fw-semibold opacity-75"
-                                                    href="portfolio.html#menu_page">
-                                                    Menu Design
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="portfolio.html#humanity_page">Humanity
+                                                Photography</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="portfolio.html#sports_page">Sports
+                                                Photography</a>
+                                        </li>
+                                        <li><a class="dropdown-item"
+                                                href="portfolio.html#architectural_page">Architectural
+                                                Photography</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="portfolio.html#food_page">Food
+                                                Photography</a>
+                                        </li>
+                                    </ul>
                                 </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle"
+                                        href="portfolio.html#design_graphics">Design
+                                        Graphics</a>
 
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="portfolio.html#menu_page">Menu Design</a>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
+                        </li>
+
+                        <!-- PORTFOLIO MOBILE -->
+                        <li class="nav-item d-lg-none">
+                            <a id="mobileNavPortoBtn" class="nav-link text-start px-4 px-lg-0" data-bs-toggle="collapse"
+                                href="#portfolioMobile">
+                                Portfolio <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-down transform transition-transform design-icon porto-icon"
+                                    aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </a>
+
+                            <div class="collapse" id="portfolioMobile">
+                                <ul class="navbar-nav">
+
+                                    <li class="text-start px-4 px-lg-0 btn btn-transparent border mb-2 bg-menu-mobile">
+                                        <a class="nav-link fw-semibold" href="portfolio.html#">
+                                            Video Content <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-chevron-down transform transition-transform photo-icon rotate-50"
+                                                aria-hidden="true">
+                                                <path d="m6 9 6 6 6-6"></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+
+                                    <li class="text-start px-4 px-lg-0 border btn btn-transparent bg-menu-mobile">
+                                        <a id="mobileNavButton" class="nav-link fw-semibold" data-bs-toggle="collapse"
+                                            href="#photoMobile">
+                                            Photography <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-chevron-down transform transition-transform photo-icon"
+                                                aria-hidden="true">
+                                                <path d="m6 9 6 6 6-6"></path>
+                                            </svg>
+                                        </a>
+
+                                        <div class="collapse" id="photoMobile">
+                                            <ul class="navbar-nav">
+                                                <li>
+                                                    <a class="nav-link text-start px-4 px-lg-0 fw-semibold opacity-75"
+                                                        href="portfolio.html#humanity_page">
+                                                        Humanity Photography
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link text-start px-4 px-lg-0 fw-semibold opacity-75"
+                                                        href="portfolio.html#sports_page">
+                                                        Sports Photography
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link text-start px-4 px-lg-0 fw-semibold opacity-75"
+                                                        href="portfolio.html#architectural_page">Architectural
+                                                        Photography</a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link text-start px-4 px-lg-0 fw-semibold opacity-75"
+                                                        href="portfolio.html#food_page">Food Photography</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <!-- Design -->
+                                    <li class="text-start px-4 px-lg-0 btn btn-transparent border mt-2 bg-menu-mobile">
+                                        <a id="mobileNavButton" class="nav-link fw-semibold" data-bs-toggle="collapse"
+                                            href="#designMobile">
+                                            Design Graphics <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-chevron-down transform transition-transform design-icon"
+                                                aria-hidden="true">
+                                                <path d="m6 9 6 6 6-6"></path>
+                                            </svg>
+                                        </a>
+
+                                        <div class="collapse" id="designMobile">
+                                            <ul class="navbar-nav">
+                                                <li>
+                                                    <a class="nav-link my-0 text-start px-4 px-lg-0 fw-semibold opacity-75"
+                                                        href="portfolio.html#menu_page">
+                                                        Menu Design
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-start px-4 px-lg-0" href="index.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <button class="nav-link btn py-2 mx-3 rounded-circle theme-toggle-btn themeToggleBtn"
+                                title="Toggle dark mode">
+                                <i class="bi bi-moon-stars theme-icon"></i>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-light ramdhani border border-opacity-25 border-secondary"
+                                href="assets/Daffa_Ramdhani’s_CV.pdf" target="_blank">Resume
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end navbar -->
+
+        <main class="page-content">
+            <!-- Main section-->
+            <!-- ABOUT SECTION -->
+            <section class="about-section py-2">
+                <div class="container py-5">
+
+                    <div class="row align-items-center g-5">
+
+                        <!-- LEFT -->
+                        <div class="col-lg-7">
+
+                            <h1 class="display-5 fw-bold mb-4">
+                                Daffa Ramdhani
+                            </h1>
+
+                            <p class="lead animate__animated animate__fadeInUp animate__delay-1s paragh-1">
+                                Hi, I’m Daffa Ramdhani, a Photographer and Designer passionate about visual
+                                storytelling. I
+                                focus on capturing moments
+                                and creating designs that connect emotionally and creatively.
+                            </p>
+
+                            <p class="lead animate__animated animate__fadeInUp animate__delay-1s paragh-2">
+                                I am a fresh graduate of Vocational High School (SMK) majoring in Visual Communication
+                                Design
+                                with experience in
+                                marketing communication, social media management, customer service, and content
+                                creation. I have
+                                developed strong
+                                communication, creativity, and teamwork skills through both professional and internship
+                                experiences.
+                            </p>
+
+                            <p class="text-secondary animate__animated animate__fadeInUp animate__delay-1s paragh-3">
+                                I am eager to contribute, learn, and grow in a professional environment. With a
+                                proactive
+                                mindset and adaptability, I am
+                                ready to take on new challenges and deliver positive results for the organization.
+                            </p>
+
                         </div>
-                    </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link text-start px-4 px-lg-0" href="index.html#contact">Contact</a>
-                    </li>
-                    <li class="nav-item d-none d-lg-block">                        
-                        <button class="nav-link btn py-2 mx-3 rounded-circle theme-toggle-btn themeToggleBtn" title="Toggle dark mode">
-                            <i class="bi bi-moon-stars theme-icon"></i>
-                        </button>
-                    </li>
-                    <li class="nav-item">                        
-                        <a class="nav-link btn btn-light ramdhani border border-opacity-25 border-secondary"
-                            href="assets/Daffa_Ramdhani’s_CV.pdf" target="_blank">Resume
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- end navbar -->
+                        <!-- RIGHT -->
+                        <div class="col-lg-5 text-center animate__animated animate__fadeInRight animate__delay-1s">
+                            <img src="assets/tes.jpg" class="img-fluid about-image" alt="Profile">
+                        </div>
 
-<!-- Main section-->
-<!-- ABOUT SECTION -->
-<section class="about-section py-2">
-    <div class="container py-5">
+                    </div>
 
-        <div class="row align-items-center g-5">
-
-            <!-- LEFT -->
-            <div class="col-lg-7">
-
-                <h1 class="display-5 fw-bold mb-4">
-                    Daffa Ramdhani
-                </h1>
-
-                <p class="lead animate__animated animate__fadeInUp animate__delay-1s paragh-1">
-                    Hi, I’m Daffa Ramdhani, a Photographer and Designer passionate about visual storytelling. I focus on capturing moments
-                    and creating designs that connect emotionally and creatively.
-                </p>
-
-                <p class="lead animate__animated animate__fadeInUp animate__delay-1s paragh-2">
-                    I am a fresh graduate of Vocational High School (SMK) majoring in Visual Communication Design with experience in
-                    marketing communication, social media management, customer service, and content creation. I have developed strong
-                    communication, creativity, and teamwork skills through both professional and internship experiences.
-                </p>
-
-                <p class="text-secondary animate__animated animate__fadeInUp animate__delay-1s paragh-3">
-                I am eager to contribute, learn, and grow in a professional environment. With a proactive mindset and adaptability, I am
-                ready to take on new challenges and deliver positive results for the organization.
-                </p>
-
-            </div>
-
-            <!-- RIGHT -->
-            <div class="col-lg-5 text-center animate__animated animate__fadeInRight animate__delay-1s">
-                <img src="assets/tes.jpg" class="img-fluid about-image" alt="Profile">
-            </div>
-
-        </div>
-
-        <!-- FAVORITE SONGS -->
-        <div class="mt-5 pt-5">
+                    <!-- FAVORITE SONGS -->
+                    <!-- <div class="mt-5 pt-5">
 
             <div class="d-flex align-items-center mb-4">
                 <div class="title-line me-3"></div>
@@ -294,106 +311,109 @@
 
             </div>
 
-        </div>
+        </div> -->
 
-    </div>
-</section>  
- <!-- End Main section -->
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">© 2026 — Made by <strong>Daffa Ramdhani</strong></p>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <small class="">All rights reserved</small>
+            </section>
+        </main>
+        <!-- End Main section -->
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">© 2026 — Made by <strong>Daffa Ramdhani</strong></p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <small class="">All rights reserved</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <!-- Modal navbar profile -->
+        <div class="modal fade px-2 bg-modal-profile" id="profileModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent py-5 rounded-4 border-0 position-relative">
+                    <button type="button" class="btn-close btn-close-modal btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <img id="profileModalImg" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- End Footer -->
-
-    <!-- Modal navbar profile -->
-    <div class="modal fade px-2 bg-modal-profile" id="profileModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content bg-transparent py-5 rounded-4 border-0 position-relative">
-                <button type="button" class="btn-close btn-close-modal btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                <img id="profileModalImg" class="img-fluid" alt="">
-            </div>
-        </div>
-    </div>
 
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
 
 
-    <!-- JS -->
-    <script src="js/modal.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/theme-toggle.js"></script>
+        <!-- JS -->
+        <script src="js/modal.js"></script>
+        <script src="js/navbar.js"></script>
+        <script src="js/theme-toggle.js"></script>
 
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
-    <script>
-        window.onload = function () {
-            if (!window.location.hash) {
-                window.scrollTo(0, 0);
-            }
-        };
-    </script>
-
-    <script>
-        history.scrollRestoration = "manual";
-
-        window.addEventListener("load", function () {
-
-            const isRefresh = performance.getEntriesByType("navigation")[0].type === "reload";
-
-            if (isRefresh) {
-                window.scrollTo(0, 0);
-
-                if (window.location.hash) {
-                    history.replaceState(null, null, window.location.pathname);
+        <script>
+            window.onload = function () {
+                if (!window.location.hash) {
+                    window.scrollTo(0, 0);
                 }
-            }
+            };
+        </script>
 
-        });
-    </script>
+        <script>
+            history.scrollRestoration = "manual";
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener("load", function () {
 
-            if (window.location.hash && document.referrer) {
+                const isRefresh = performance.getEntriesByType("navigation")[0].type === "reload";
 
-                try {
-                    const currentHost = window.location.hostname;
-                    const referrerHost = new URL(document.referrer).hostname;
+                if (isRefresh) {
+                    window.scrollTo(0, 0);
 
-                    if (currentHost === referrerHost) {
-                        document.body.classList.add("no-animation");
-
-                        // matikan AOS juga
-                        const aosElements = document.querySelectorAll("[data-aos]");
-                        aosElements.forEach(el => {
-                            el.removeAttribute("data-aos");
-                        });
+                    if (window.location.hash) {
+                        history.replaceState(null, null, window.location.pathname);
                     }
+                }
 
-                } catch (e) { }
+            });
+        </script>
 
-            }
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
 
-        });
-    </script>
+                if (window.location.hash && document.referrer) {
+
+                    try {
+                        const currentHost = window.location.hostname;
+                        const referrerHost = new URL(document.referrer).hostname;
+
+                        if (currentHost === referrerHost) {
+                            document.body.classList.add("no-animation");
+
+                            // matikan AOS juga
+                            const aosElements = document.querySelectorAll("[data-aos]");
+                            aosElements.forEach(el => {
+                                el.removeAttribute("data-aos");
+                            });
+                        }
+
+                    } catch (e) { }
+
+                }
+
+            });
+        </script>
+    </div>
 </body>
 
 </html>
