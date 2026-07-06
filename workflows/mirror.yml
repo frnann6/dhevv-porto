@@ -1,0 +1,22 @@
+name: Mirror to GitHub Deploy Repo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push Mirror
+        uses: pixta-dev/repository-mirroring-action@v1
+        with:
+          target_repo_url: https://github.com/dhewlabel/dhevv-porto.git
+          ssh_private_key: ""
+          access_token: ${{ secrets.MIRROR_TOKEN }}
